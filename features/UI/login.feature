@@ -12,7 +12,7 @@ Feature: Login
     Then I am on product list page
   
   @negative
-  Scenario: As user want to login using invalid account
+  Scenario: As user won't be able to login using invalid account
 
     When I type 'standard_user' on 'username' field
     And I type 'wrong_sauce' on 'password' field
@@ -20,7 +20,7 @@ Feature: Login
     Then I got error message with text 'Username and password do not match'
 
   @negative
-  Scenario: As user want to login using locked account
+  Scenario: As user won't be able to login using locked account
 
     When I type 'locked_out_user' on 'username' field
     And I type 'secret_sauce' on 'password' field
