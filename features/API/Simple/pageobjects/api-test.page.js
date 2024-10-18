@@ -1,7 +1,7 @@
 const { expect: wdioExpect , $ } = require('@wdio/globals');
 const chai = require('chai');
 const chaiAsPromised = require("chai-as-promised");
-const plugins = require('../../../support/plugins');
+const plugins = require('../../../../support/plugins');
 const axios = require('axios').default;
 
 chai.use(chaiAsPromised);

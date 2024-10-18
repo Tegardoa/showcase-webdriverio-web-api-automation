@@ -28,8 +28,17 @@ async function logInAsync(data) {
   console.log('Log Message = ' + data);
 }
 
+function generateUniqueNumber() {
+	let pad = '000000';
+	let x = Math.floor(Math.random() * 1000000 + 1).toString();
+	let number = pad.substring(0, pad.length - x.length) + x;
+
+	return number;
+}
+
 module.exports = {
   waitForPageIsLoaded,
   toFixed,
   logInAsync,
+  generateUniqueNumber
 }
