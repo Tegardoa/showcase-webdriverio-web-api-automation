@@ -8,7 +8,7 @@ Feature: Add Product to Cart
     Then I am on product list page
 
   @positive
-  Scenario: As user want to add single product to cart through product detail
+  Scenario: As User want to add single product to cart through product detail
     When I check product data on product card with 'Sauce Labs Onesie' as product name
     And I click on product card with 'Sauce Labs Onesie' as product name
     Then I am on product detail page
@@ -17,7 +17,7 @@ Feature: Add Product to Cart
     Then I can see badge on shopping cart with correct total product
 
   @positive
-  Scenario: As user want to multiple single product to cart through product detail
+  Scenario: As User want to multiple single product to cart through product detail
     When I check product data on product card with 'Sauce Labs Onesie' as product name
     And I click on product card with 'Sauce Labs Onesie' as product name
     Then I am on product detail page
