@@ -15,6 +15,9 @@ Feature: Add Product to Cart
     And I validate product title, desc, price, and image is equal to list product page
     When I 'add' product through product detail page
     Then I can see badge on shopping cart with correct total product
+    When I click cart button on top navbar
+    Then I am on cart page
+    And I validate products are added to cart
 
   @positive
   Scenario: As User want to add multiple product to cart through product detail
@@ -38,3 +41,6 @@ Feature: Add Product to Cart
     And I validate product title, desc, price, and image is equal to list product page
     When I 'add' product through product detail page
     Then I can see badge on shopping cart with correct total product
+    When I click cart button on top navbar
+    Then I am on cart page
+    And I validate products are added to cart
