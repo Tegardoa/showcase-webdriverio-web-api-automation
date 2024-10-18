@@ -8,7 +8,7 @@ Feature: Access Product Detail
     Then I am on product list page
 
   @positive
-  Scenario: As User want to access product detail through product list then validate product data
+  Scenario: As User want to access product detail through product list then product data is correct
     When I check product data on product card with 'Sauce Labs Onesie' as product name
     And I click on product card with 'Sauce Labs Onesie' as product name
     Then I am on product detail page

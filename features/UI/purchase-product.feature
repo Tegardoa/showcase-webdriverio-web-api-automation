@@ -70,7 +70,7 @@ Feature: Purchase Product
     And I validate product order is success
 
   @negative
-  Scenario: As User want to purchase single product without personal information
+  Scenario: As User won't be able to purchase single product without personal information
     When I check product data on product card with 'Sauce Labs Bolt T-Shirt' as product name
     And I click on product card with 'Sauce Labs Bolt T-Shirt' as product name
     Then I am on product detail page

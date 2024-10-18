@@ -19,7 +19,7 @@ Feature: Login
     And I click on 'login-button' button
     Then I got error message with text 'Username and password do not match'
 
-  @negative
+  @edgecase
   Scenario: As User won't be able to login using locked account
 
     When I type 'locked_out_user' on 'username' field

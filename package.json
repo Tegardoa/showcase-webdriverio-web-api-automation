@@ -6,6 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "wdio": "wdio run ./wdio.conf.js",
+    "wdio-with-tags": "wdio run ./wdio.conf.js --cucumberOpts.tags='@negative'",
     "allure-generate": "allure generate allure-results --clean -o allure-report",
 		"allure-open": "allure open ./allure-report",
 		"allure-export": "node ./node_modules/allure-single-html-file-js/combine.js ./allure-report",

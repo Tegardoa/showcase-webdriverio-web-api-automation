@@ -17,7 +17,7 @@ Feature: Add Product to Cart
     Then I can see badge on shopping cart with correct total product
 
   @positive
-  Scenario: As User want to multiple single product to cart through product detail
+  Scenario: As User want to add multiple product to cart through product detail
     When I check product data on product card with 'Sauce Labs Onesie' as product name
     And I click on product card with 'Sauce Labs Onesie' as product name
     Then I am on product detail page
